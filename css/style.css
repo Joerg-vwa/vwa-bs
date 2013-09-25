@@ -1,4 +1,188 @@
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
- */
+body {
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+/******* Articles - Common */
+
+.article {
+	text-align: justify;
+}
+
+.article a:link,
+.article a:active,
+.article a:visited {
+	color: #91DB09;	
+	text-decoration: none;
+}
+
+.article a:hover {
+	text-decoration: underline;
+}
+
+/******* Articles - Specific */
+
+.featured {
+	font-size: 16px;
+}
+
+.featured h1 {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+.tier2 h1 {
+	font-size: 24px;
+}
+
+.tier3 h1 {
+	font-size: 18px;
+}
+
+
+
+ /*******  Generic classes */
+ 
+
+.grey {
+	background: #c0c0c0;
+}
+
+.space20 {
+	height: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+
+ /*******  Header */
+ 
+ 
+.logo {
+ 	background: url(../gfx/fussball-auf-grass.jpg) no-repeat;
+ 	background-position: top left;
+ 	height: 180px;
+ 	color: #fff;
+ }
+
+.logo .main {
+ 	font-size: 68px;
+ 	font-weight: bold;
+ 	height: 147px;
+}
+
+.logo .side {
+ 	font-size: 24px;
+ 	font-weight: bold;
+}
+
+/******* 	Navigation */
+
+
+nav#primary ul.menu  {
+	width: 960px;
+}
+
+nav#primary ul.menu li {
+	display: inline;
+
+}
+
+nav#primary ul.menu a:visited,
+nav#primary ul.menu a:link {
+	border: 1px solid #91DB09;
+	display: block;
+	float: left;
+	background-color: #fff;
+	color: #404040;
+	text-decoration: none;
+	font-weight: bold;
+	width: 180px;
+	padding: 5px 5px;
+}
+
+nav#primary ul.menu a:active {
+	background-color: #91DB09;
+	color: #fff;
+}
+
+nav#primary ul.menu a:hover {
+	background-color: #91DB09;
+	color: #fff;
+}
+
+
+  /*******  Login Form */
+ 
+
+#login {
+	width: 149px;
+	margin: 0 auto;
+}
+
+.loginform button {
+	margin-bottom: 0px;
+}
+
+.loginform h4 {
+	margin: 0;
+	text-align: center;
+}
+
+
+.loginform a:link {	
+	font-size: 12px;
+	color: #c0c0c0;
+	text-decoration: none;
+}
+
+.loginform a:hover {	
+	font-size: 12px;
+	color: #c0c0c0;
+	text-decoration: underline;
+}
+
+
+  /*******  Footer */
+ 
+
+ footer {
+ 	font-size: 12px;
+ 	background: #404040;
+ 	padding: 10px 0;
+ 	color: #fff;
+ 	text-align: left;
+ }
+
+ footer b {
+ 	color: #91DB09;
+ 	text-decoration: underline;
+ }
+footer a:active,
+footer a:visited,
+footer a:link {
+ 	text-decoration: none;
+ 	color: #fff;
+ }
+
+ footer a:hover {
+ 	text-decoration: underline;
+ }
+
