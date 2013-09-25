@@ -1,65 +1,48 @@
-<header id="navbar" role="banner" class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-
-      <?php if (!empty($logo)): ?>
-        <a class="logo pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
-
-      <?php if (!empty($site_name)): ?>
-        <h1 id="site-name">
+  	<header>
+		<div class="container_12 logo">
+			<div class="grid_9 main">
+				<?php if (!empty($site_name)): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="brand"><?php print $site_name; ?></a>
-        </h1>
       <?php endif; ?>
+			</div>
+			<div class="grid_3 side">
+				<!-- Reserved for future use --> &nbsp;
+			</div>
+			<div class="clear"></div>
+			<nav id="primary">
+				<ul class="menu">				
+					<li><a href="#">&Uuml;ber uns</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Jugendarbeit</a></li>
+					<li><a href="#">Mannschaften</a></li>
+					<li><a href="#">Spielplan</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <div class="nav-collapse collapse">
-          <nav role="navigation">
-            <?php if (!empty($primary_nav)): ?>
-              <?php print render($primary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($secondary_nav)): ?>
-              <?php print render($secondary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($page['navigation'])): ?>
-              <?php print render($page['navigation']); ?>
-            <?php endif; ?>
-          </nav>
-        </div>
-      <?php endif; ?>
-    </div>
-  </div>
-</header>
+    <!-- navbar goe here --->
 
-<div class="main-container container">
+<!-- /#header -->
 
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
+	<div class="container_12">		
+		<div class="clear space20"></div>
 
-    <?php print render($page['header']); ?>
-  </header> <!-- /#header -->
-
-  <div class="row-fluid">
-
+		<div class="grid_9 article featured">
+      <?php print render($page['highlighted']); ?>
+ 		</div>
+ 		
     <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="span3" role="complementary">
+    	<div class="grid_3 loginform">
         <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
+      </div>  <!-- /#sidebar-first -->
     <?php endif; ?>  
-
+    
+		<div class="clear space20"></div>
+		
     <section class="<?php print _bootstrap_content_span($columns); ?>">  
       <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
+        <div class="highlighted hero-unit"></div>
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
@@ -89,6 +72,42 @@
 
   </div>
 </div>
-<footer class="footer container">
-  <?php print render($page['footer']); ?>
-</footer>
+
+	<footer>
+		<div class="container_12">
+			<div class="grid_2">
+				<b>Navigation</b><br />
+				<a href="#">&Uuml;ber uns</a><br />
+				<a href="#">Training</a><br />
+				<a href="#">Jugendarbeit</a><br />
+				<a href="#">Mannschaften</a><br />
+				<a href="#">Spielplan</a><br />
+			</div>
+			<div class="grid_2">
+				<b>Folgen Sie uns</b><br />
+				<a href="#">Twitter</a><br />
+				<a href="#">Facebook</a><br />
+				<a href="#">Google+</a><br />
+				<a href="#">Flickr</a><br />
+			</div>
+			<div class="grid_2">
+				&nbsp;
+			</div>
+			<div class="grid_2">
+				&nbsp;
+			</div>
+			<div class="grid_2">
+				&nbsp;
+			</div>			
+			<div class="grid_2">
+				<b>Kontakt</b><br />
+				<a href="#">Impressum</a><br />
+				<a href="#">Kontakt</a><br />
+				<a href="#">Presse</a><br />
+			</div>
+			
+		</div>
+	</footer>
+
+  <?php // print render($page['footer']); ?>
+

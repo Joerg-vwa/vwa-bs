@@ -6,6 +6,12 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+ 	<link rel="stylesheet" href="sites/all/themes/vwa/css/960/reset.css" />
+	<link rel="stylesheet" href="sites/all/themes/vwa/css/960/text.css" />
+	<link rel="stylesheet" href="sites/all/themes/vwa/css/960/960.css" />
+	<link rel="stylesheet" href="sites/all/themes/vwa/css/workless/buttons.css" />
+	<link rel="stylesheet" href="sites/all/themes/vwa/css/workless/forms.css" />
+	<link rel="stylesheet" href="sites/all/themes/vwa/css/style.css" />
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,8 +22,11 @@
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
+
+	
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  
 </body>
 </html>
